@@ -1,5 +1,4 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
 html {
     color: #222;
     font-size: 1em;
@@ -91,7 +90,7 @@ body {
     padding-top: 100px;
     padding-bottom: 20px;
     background-color: rgb(245, 245, 246);
-    
+
     font-family: 'Open Sans';
     font-weight: 300;
     font-size: 16px;
@@ -328,7 +327,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus,
-.form-control:focus	 {   
+.form-control:focus	 {
   border-color: #EDB83D;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
   outline: 0 none;
@@ -414,7 +413,7 @@ form .panel {
    ========================================================================== */
 
 @media only screen and (max-width: 767px) {
-	
+
 	.link-tile .panel {
 		margin-bottom: 20px;
 	}
@@ -508,4 +507,16 @@ form .panel {
 
 .clearfix {
     *zoom: 1;
+}
+
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
 }
