@@ -24,6 +24,7 @@
 		<link rel="stylesheet" href="styles/main.css">
 
 	<!-- endbuild -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 	<!-- build:js scripts/vendor/modernizr.js -->
 	<script src="/bower_components/modernizr/modernizr.js"></script>
@@ -84,7 +85,7 @@
       		  <div class="panel-body">
       		  	<div class="form-group form-group-lg">
                 <div class="col-sm-6">
-      		  	      <input class="form-control" type="text" autofocus="autofocus" placeholder="Barcode Number" id="barcode">
+      		  	      <input class="form-control" type="text" autofocus="autofocus" id="barcode">
       		  		</div>
 								<div class="col-sm-6">
 								<button type="submit" class="fileUpload btn btn-primary  btn-block"><i class="fa fa-camera"></i> Take a Picture
@@ -108,8 +109,8 @@
 						<div class="panel-body">
 						<p class="lead">SCAN<br /><small>Image scanned</small></p>
 						<br>
-						<canvas width="320" height="240" id="picture" style="border: solid 1px;"></canvas>
-						<p id="textbit"></p>
+						<canvas width="320" height="240" id="picture"></canvas>
+						<p id="textbit"></p><button  type="submit" id="btn" class="btn btn-primary">Copy</button>
 						</div>
 
 					</div>
@@ -118,19 +119,16 @@
 
 			</div>
 
-
-			<!-- /. CANAVAS DISPLAY SCAN  -->
-			<!-- <div id="container">
-				<canvas width="320" height="240" id="picture" style="border: solid 1px;"></canvas>
-				<input id="Take-Picture" type="file" accept="image/*;capture=camera" />
-				<p id="textbit"></p>
-			</div> -->
-
 			<script type="text/javascript" src="JOB.js"></script>
 			<script type="text/javascript">
 				var takePicture = document.querySelector("#Take-Picture"),
 				showPicture = document.createElement("img");
 				Result = document.querySelector("#textbit");
+				$('#btn').click(function () {
+					var sticazzi = $('#textbit').html();
+					$('#barcode').val(sticazzi);
+				});
+
 				var canvas =document.getElementById("picture");
 				var ctx = canvas.getContext("2d");
 				JOB.Init();
@@ -140,10 +138,15 @@
 						for(var i = 0; i < result.length; i++) {
 							tempArray.push(result[i].Format+" : "+result[i].Value);
 						}
+
 						Result.innerHTML=tempArray.join("<br />");
-					}else{
+
+					console.log("Array", tempArray);
+					console.log("Result", Result);
+				}else{
 						if(result.length === 0) {
 							Result.innerHTML="Decoding failed.";
+								console.log("Result", Result);
 						}
 					}
 				});
