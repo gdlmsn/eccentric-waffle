@@ -69,7 +69,7 @@
 				<div class="col-sm-12">
 					<div class="panel panel-default">
 						<div class="panel-body">
-						<p class="lead">Card Details<br /><small>Enter the barcode on the Gift Card:</small></p>
+						<p class="lead">Card Details<br /><small>Enter or Scan the barcode on the Gift Card:</small></p>
 
 						</div>
 
@@ -85,10 +85,10 @@
       		  <div class="panel-body">
       		  	<div class="form-group form-group-lg">
                 <div class="col-sm-6">
-      		  	      <input class="form-control" type="text" autofocus="autofocus" id="barcode">
+      		  	      <input class="form-control" type="text" autofocus="autofocus" id="barcode" />
       		  		</div>
 								<div class="col-sm-6">
-								<button type="submit" class="fileUpload btn btn-primary  btn-block"><i class="fa fa-camera"></i> Take a Picture
+								<button id="btn2" type="submit" class="fileUpload btn btn-primary  btn-block"><i class="fa fa-camera"></i> Take a Picture
 									<input id="Take-Picture" type="file" class="upload" accept="image/*;capture=camera" />
 								</div>
       		  	</div>
@@ -107,10 +107,11 @@
 				<div class="col-sm-12">
 					<div class="panel panel-default">
 						<div class="panel-body">
-						<p class="lead">SCAN<br /><small>Image scanned</small></p>
+						<p class="lead">Preview</p>
 						<br>
 						<canvas width="320" height="240" id="picture"></canvas>
-						<p id="textbit"></p><button  type="submit" id="btn" class="btn btn-primary">Copy</button>
+						<p id="textbit" hidden></p>
+						<!-- <button  type="submit" id="btn" class="btn btn-primary">Copy</button> -->
 						</div>
 
 					</div>
@@ -124,11 +125,16 @@
 				var takePicture = document.querySelector("#Take-Picture"),
 				showPicture = document.createElement("img");
 				Result = document.querySelector("#textbit");
-
-				//copy result content paste it inside input
-				$('#btn').click(function () {
-					var sticazzi = $('#textbit').html();
-					$('#barcode').val(sticazzi);
+				// //copy result content paste it inside input
+				// $('#btn').click(function () {
+				// 	var sticazzi = $('#textbit').html();
+				// 	$('#barcode').val(sticazzi);
+				// });
+				//
+				//empty input field when uploading new barcode
+				$('#btn2').click(function () {
+					$('#barcode').val('');
+					// $('#picture').remove();
 				});
 
 				var canvas =document.getElementById("picture");
@@ -138,17 +144,24 @@
 					if(result.length > 0){
 						var tempArray = [];
 						for(var i = 0; i < result.length; i++) {
-							tempArray.push(result[i].Format+" : "+result[i].Value);
+							tempArray.push(result[i].Value);
 						}
 
-						Result.innerHTML=tempArray.join("<br />");
+						Result.innerHTML=tempArray.slice(0,1);
+						document.getElementById("barcode").value = Result.innerHTML;
+
+					// 	$('#btn2').click(function () {
+ 				// 		var areo = Result.innerHTML.toString();
+ 				// 		Result.val();
+ 				// 	});
+					//
 
 					console.log("Array", tempArray);
 					console.log("Result", Result);
 				}else{
 						if(result.length === 0) {
 							Result.innerHTML="Decoding failed.";
-								console.log("Result", Result);
+								alert('Decoding failed. Please try again')
 						}
 					}
 				});
