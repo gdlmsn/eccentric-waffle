@@ -142,24 +142,19 @@
 				JOB.Init();
 				JOB.SetImageCallback(function(result) {
 					if(result.length > 0){
+
+						console.log('%c Lunghezza' , 'background: #222; color: #bada55', result.length);
 						var tempArray = [];
 						for(var i = 0; i < result.length; i++) {
 							tempArray.push(result[i].Value);
 						}
-
 						Result.innerHTML=tempArray.slice(0,1);
 						document.getElementById("barcode").value = Result.innerHTML;
 
-					// 	$('#btn2').click(function () {
- 				// 		var areo = Result.innerHTML.toString();
- 				// 		Result.val();
- 				// 	});
-					//
-
-					console.log("Array", tempArray);
-					console.log("Result", Result);
-				}else{
+				console.log('%c entraz' , 'background: #222; color: #bada55', Result.innerHTML);
+				}else {
 						if(result.length === 0) {
+
 							Result.innerHTML="Decoding failed.";
 								alert('Decoding failed. Please try again')
 						}
