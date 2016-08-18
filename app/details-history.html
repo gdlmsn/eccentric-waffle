@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DG STORE Redemption UI</title>
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<!-- build:css styles/vendor.css -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:css styles/main.css -->
+
+	<link rel="stylesheet" href="styles/font-awesome.min.css">
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/theme.min.css">
+		<link rel="stylesheet" href="styles/main.css">
+
+	<!-- endbuild -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<!-- build:js scripts/vendor/modernizr.js -->
+	<script src="/bower_components/modernizr/modernizr.js"></script>
+	<!-- endbuild -->
+</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="check.html"><i class="fa fa-search fa-fw"></i><span class="hidden-sm">&nbsp;Check</span></a></li>
+            <li><a href="purchase.html"><i class="fa fa-dollar fa-fw"></i><span class="hidden-sm">&nbsp;Purchase</span></a></li>
+            <li><a href="reports.html"><i class="fa fa-line-chart fa-fw"></i><span class="hidden-sm">&nbsp;Reports</span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog fa-fw"></i><span class="hidden-sm">&nbsp;Account</span><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="help.html">Help</a></li>
+                <li><a href="password.html">Change Password</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="login.html">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+      	<div class="col-sm-12">
+          		<div class="panel panel-default">
+          		  <div class="panel-body with-table">
+          		  	<p class="lead pull-left">Redemption History<br /><small>Store Card <strong>6378 0851 1821 3462</strong></small></p>
+          		  </div>
+          		</div>
+      	</div>
+      </div>
+      <div class="row">
+      	<div class="col-sm-12">
+      		<div class="panel panel-default">
+      		  <div class="panel-body with-table">
+
+
+      		  	 <table class="table table-hover table-bordered">
+      		  	 	<thead>
+      		  	 		<th>Id</th>
+      		  	 		<th>Transacted Store</th>
+      		  	 		<th>Transacted Amount</th>
+      		  	 		<th>Action</th>
+      		  	 	</thead>
+      		  	   	<tbody>
+                     <tr>
+                         <td>2</td>
+                         <td>Manly Store (MNS)</td>
+                         <td>$1.00 Dr</td>
+ 						<td>
+                              <span>N/A</span>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>3</td>
+                         <td>Manly Store (MNS)</td>
+                         <td>$2.00 Dr</td>
+ <td>
+                              <span>N/A</span>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>4</td>
+                         <td>Manly Store (MNS)</td>
+                         <td>$2.00 Cr</td>
+ <td>
+                              <span>N/A</span>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>5</td>
+                         <td>Manly Store (MNS)</td>
+                         <td>$5.00 Dr</td>
+ <td>
+                              <span>N/A</span>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>17</td>
+                         <td>Pitt Water store (PWS)</td>
+                         <td>$5.00 Dr</td>
+      		  	   	 <td>
+
+      		  	   	 <form method="post" action="">
+      		  	   	 	<select class="form-control in-table">
+      		  	   	 	<option value="">- Select -</option>
+  		  	   	 		<option value="3">Manly Store (MNS)</option>
+  		  	   	 		<option value="4">Pitt Water store (PWS)</option>
+  		  	   	 		<option value="5">Test Store (TestCode)</option>
+  		  	   	 		</select>
+      		  	   	 </form>
+      		  	   	                         </td>
+      		  	   	                     </tr>
+      		  	   	             </tbody>
+      		  	 </table>
+
+      		  </div>
+      		  <div class="panel-footer">
+      		  	<a href="details-activated.html" class="btn btn-default btn-block btn-lg"><i class="fa fa-chevron-circle-left"></i>&nbsp;Back</a>
+      		  </div>
+      		</div>
+      	</div>
+
+      </div>
+
+      <footer>
+        <p>&copy; <a href="http://www.digitalglue.com.au" target="_blank" title="Digital Glue">Digital Glue</a> 2015</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Modal -->
+    <div class="modal modal-vcenter fade" id="modal-confirm-redeem" tabindex="-1" role="dialog" aria-labelledby="modal-confirm-activate-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title lead" id="">Confirm Action</h4>
+          </div>
+          <div class="modal-body">
+            <p>Do you want to proceed to redeem this store card?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <a href="details-redeem.html" class="btn btn-primary">Confirm&nbsp;<i class="fa fa-chevron-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal modal-vcenter fade" id="modal-confirm-hold" tabindex="-1" role="dialog" aria-labelledby="modal-confirm-activate-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title lead" id="">Confirm Action</h4>
+          </div>
+          <div class="modal-body">
+            <p>Do you want to set the store card with Barcode: <br />
+            <strong>6378 0851 1821 3462</strong> on hold?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <a href="#" class="btn btn-primary">Confirm&nbsp;<i class="fa fa-chevron-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal modal-vcenter fade" id="modal-confirm-refund" tabindex="-1" role="dialog" aria-labelledby="modal-confirm-activate-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title lead" id="">Confirm Action</h4>
+          </div>
+          <div class="modal-body">
+            <p>Reason for cancelling</p>
+
+            <form>
+              <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Reason for Cancelling"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <a href="#" class="btn btn-primary">Confirm&nbsp;<i class="fa fa-chevron-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal modal-vcenter fade" id="modal-confirm-extend" tabindex="-1" role="dialog" aria-labelledby="modal-confirm-activate-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title lead" id="">Confirm Action</h4>
+          </div>
+          <div class="modal-body">
+            <p>Enter New Expiry in Days:</p>
+
+            <form>
+              <div class="form-group">
+                <input type="text" name="" value="" placeholder="No. Days" class="form-control" />
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <a href="#" class="btn btn-primary">Confirm&nbsp;<i class="fa fa-chevron-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap/js/affix.js"></script>
+    <script src="/bower_components/bootstrap/js/alert.js"></script>
+    <script src="/bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="/bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="/bower_components/bootstrap/js/modal.js"></script>
+    <script src="/bower_components/bootstrap/js/transition.js"></script>
+    <script src="/bower_components/bootstrap/js/button.js"></script>
+    <script src="/bower_components/bootstrap/js/popover.js"></script>
+    <script src="/bower_components/bootstrap/js/carousel.js"></script>
+    <script src="/bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap/js/collapse.js"></script>
+    <script src="/bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+  </body>
+  </html>

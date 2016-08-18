@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <meta charset=utf-8>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="">
@@ -19,9 +20,9 @@
 	<!-- build:css styles/main.css -->
 
 	<link rel="stylesheet" href="styles/font-awesome.min.css">
-		<link rel="stylesheet" href="styles/bootstrap.min.css">
-		<link rel="stylesheet" href="styles/theme.min.css">
-		<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/theme.min.css">
+	<link rel="stylesheet" href="styles/main.css">
 
 	<!-- endbuild -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -30,48 +31,48 @@
 	<script src="/bower_components/modernizr/modernizr.js"></script>
 	<!-- endbuild -->
 </head>
-	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">Brand</a>
-				</div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="check.html"><i class="fa fa-search fa-fw"></i><span class="hidden-sm">&nbsp;Check</span></a></li>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Brand</a>
+        </div>
 
-						<li><a href="reports.html"><i class="fa fa-line-chart fa-fw"></i><span class="hidden-sm">&nbsp;Reports</span></a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog fa-fw"></i><span class="hidden-sm">&nbsp;Account</span><span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="help.html">Help</a></li>
-								<li><a href="password.html">Change Password</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="login.html">Logout</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="check.html"><i class="fa fa-search fa-fw"></i><span class="hidden-sm">&nbsp;Check</span></a></li>
+            <li><a href="purchase.html"><i class="fa fa-dollar fa-fw"></i><span class="hidden-sm">&nbsp;Purchase</span></a></li>
+            <li><a href="reports.html"><i class="fa fa-line-chart fa-fw"></i><span class="hidden-sm">&nbsp;Reports</span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog fa-fw"></i><span class="hidden-sm">&nbsp;Account</span><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="help.html">Help</a></li>
+                <li><a href="password.html">Change Password</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="login.html">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
-		<!-- /. CONTAINER  -->
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="panel panel-default">
-						<div class="panel-body">
-						<p class="lead">Card Details<br /><small>Enter or Scan the barcode on the Gift Card:</small></p>
-
-						</div>
+	<!-- /. CONTAINER  -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="lead">Card Details
+							<br /><small>Enter or Scan the barcode on the Gift Card:</small></p>
 
 					</div>
 
@@ -79,144 +80,187 @@
 
 			</div>
 
-			<div class="row">
-				<div class="col-sm-12">
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+
 					<div class="panel panel-default">
-      		  <div class="panel-body">
-      		  	<div class="form-group form-group-lg">
-                <div class="col-sm-6">
+						<div class="panel-body">
+							<div class="form-group form-group-lg">
+                <div class="col-sm-10">
       		  	      <input class="form-control" type="text" autofocus="autofocus" id="barcode" />
       		  		</div>
-								<div class="col-sm-6">
-								<button id="btn2" type="submit" class="fileUpload btn btn-primary  btn-block"><i class="fa fa-camera"></i> Take a Picture
+								<div class="col-sm-2">
+								<button id="btn2" type="submit" class="fileUpload btn btn-primary btn-block btn-lg"><i class="fa fa-camera"></i>
 									<input id="Take-Picture" type="file" class="upload" accept="image/*;capture=camera" />
 								</div>
       		  	</div>
-
-      		  </div>
-      		  <div class="panel-footer">
-      		  	<button type="submit" class="btn btn-primary btn-block btn-lg"><i class="fa fa-search"></i>&nbsp;Check</button>
-      		  </div>
-      		</div>
-
-				</div>
+						</div>
+							<form action="details-activated.html" class="form">
+						<div class="panel-footer">
+							<button type="submit" class="btn btn-primary btn-block btn-lg"><i class="fa fa-search"></i>&nbsp;Check</button>
+						</div>
+						</form>
+					</div>
 
 			</div>
 
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="panel panel-default">
-						<div class="panel-body">
-						<p class="lead">Preview</p>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="panel panel-default" style="border:none; background-color:rgb(245, 245, 246); box-shadow:none; ">
+					<div class="panel-body">
+
 						<br>
-						<canvas width="320" height="240" id="picture"></canvas>
+						<canvas width="320" height="240" id="picture" hidden></canvas>
 						<p id="textbit" hidden></p>
 						<!-- <button  type="submit" id="btn" class="btn btn-primary">Copy</button> -->
-						</div>
-
 					</div>
 
 				</div>
 
 			</div>
 
-			<script type="text/javascript" src="JOB.js"></script>
-			<script type="text/javascript">
-				var takePicture = document.querySelector("#Take-Picture"),
-				showPicture = document.createElement("img");
-				Result = document.querySelector("#textbit");
-				// //copy result content paste it inside input
-				// $('#btn').click(function () {
-				// 	var sticazzi = $('#textbit').html();
-				// 	$('#barcode').val(sticazzi);
-				// });
-				//
-				//empty input field when uploading new barcode
-				$('#btn2').click(function () {
-					$('#barcode').val('');
-					// $('#picture').remove();
-				});
-
-				var canvas =document.getElementById("picture");
-				var ctx = canvas.getContext("2d");
-				JOB.Init();
-				JOB.SetImageCallback(function(result) {
-					if(result.length > 0){
-
-						console.log('%c Lunghezza' , 'background: #222; color: #bada55', result.length);
-						var tempArray = [];
-						for(var i = 0; i < result.length; i++) {
-							tempArray.push(result[i].Value);
-						}
-						Result.innerHTML=tempArray.slice(0,1);
-						document.getElementById("barcode").value = Result.innerHTML;
-
-				console.log('%c entraz' , 'background: #222; color: #bada55', Result.innerHTML);
-				}else {
-						if(result.length === 0) {
-
-							Result.innerHTML="Decoding failed.";
-								alert('Decoding failed. Please try again')
-						}
-					}
-				});
-				JOB.PostOrientation = true;
-				JOB.OrientationCallback = function(result) {
-					canvas.width = result.width;
-					canvas.height = result.height;
-					var data = ctx.getImageData(0,0,canvas.width,canvas.height);
-					for(var i = 0; i < data.data.length; i++) {
-						data.data[i] = result.data[i];
-					}
-					ctx.putImageData(data,0,0);
-				};
-				JOB.SwitchLocalizationFeedback(true);
-				JOB.SetLocalizationCallback(function(result) {
-					ctx.beginPath();
-					ctx.lineWIdth = "2";
-					ctx.strokeStyle="red";
-					for(var i = 0; i < result.length; i++) {
-						ctx.rect(result[i].x,result[i].y,result[i].width,result[i].height);
-					}
-					ctx.stroke();
-				});
-				if(takePicture && showPicture) {
-					takePicture.onchange = function (event) {
-						var files = event.target.files;
-						if (files && files.length > 0) {
-							file = files[0];
-							try {
-								var URL = window.URL || window.webkitURL;
-								showPicture.onload = function(event) {
-									Result.innerHTML="";
-									JOB.DecodeImage(showPicture);
-									URL.revokeObjectURL(showPicture.src);
-								};
-								showPicture.src = URL.createObjectURL(file);
-							}
-							catch (e) {
-								try {
-									var fileReader = new FileReader();
-									fileReader.onload = function (event) {
-										showPicture.onload = function(event) {
-											Result.innerHTML="";
-											JOB.DecodeImage(showPicture);
-										};
-										showPicture.src = event.target.result;
-									};
-									fileReader.readAsDataURL(file);
-								}
-								catch (e) {
-									Result.innerHTML = "Neither createObjectURL or FileReader are supported";
-								}
-							}
-						}
-					};
-				}
-			</script>
-
-			<!-- /. END CONTAINER  -->
 		</div>
 
-	</body>
+		<script type="text/javascript" src="JOB.js"></script>
+		<script type="text/javascript">
+			var takePicture = document.querySelector("#Take-Picture"),
+				showPicture = document.createElement("img");
+			Result = document.querySelector("#textbit");
+
+			$('#btn2').click(function() {
+				$('#barcode').val('');
+
+			});
+
+			var canvas = document.getElementById("picture");
+			var ctx = canvas.getContext("2d");
+			JOB.Init();
+			JOB.SetImageCallback(function(result) {
+				if (result.length > 0) {
+
+
+					var tempArray = [];
+					for (var i = 0; i < result.length; i++) {
+						tempArray.push(result[i].Value);
+					}
+					Result.innerHTML = tempArray.slice(0, 1);
+					document.getElementById("barcode").value = Result.innerHTML;
+
+					console.log('%c Lunghezza', 'background: #222; color: #bada55', tempArray);
+
+					console.log('%c entraz', 'background: #222; color: #bada55', Result.innerHTML);
+				} else {
+					if (result.length === 0) {
+
+						Result.innerHTML = "Decoding failed.";
+						alert('Decoding failed. Please try again')
+					}
+				}
+			});
+			JOB.PostOrientation = true;
+			JOB.OrientationCallback = function(result) {
+				canvas.width = result.width;
+				canvas.height = result.height;
+				var data = ctx.getImageData(0, 0, canvas.width, canvas.height);
+				for (var i = 0; i < data.data.length; i++) {
+					data.data[i] = result.data[i];
+				}
+				ctx.putImageData(data, 0, 0);
+			};
+			JOB.SwitchLocalizationFeedback(true);
+			JOB.SetLocalizationCallback(function(result) {
+				ctx.beginPath();
+				ctx.lineWIdth = "2";
+				ctx.strokeStyle = "red";
+				for (var i = 0; i < result.length; i++) {
+					ctx.rect(result[i].x, result[i].y, result[i].width, result[i].height);
+				}
+				ctx.stroke();
+			});
+			if (takePicture && showPicture) {
+				takePicture.onchange = function(event) {
+					var files = event.target.files;
+					if (files && files.length > 0) {
+						file = files[0];
+						try {
+							var URL = window.URL || window.webkitURL;
+							showPicture.onload = function(event) {
+								Result.innerHTML = "";
+								JOB.DecodeImage(showPicture);
+								URL.revokeObjectURL(showPicture.src);
+							};
+							showPicture.src = URL.createObjectURL(file);
+						} catch (e) {
+							try {
+								var fileReader = new FileReader();
+								fileReader.onload = function(event) {
+									showPicture.onload = function(event) {
+										Result.innerHTML = "";
+										JOB.DecodeImage(showPicture);
+									};
+									showPicture.src = event.target.result;
+								};
+								fileReader.readAsDataURL(file);
+							} catch (e) {
+								Result.innerHTML = "Neither createObjectURL or FileReader are supported";
+							}
+						}
+					}
+				};
+			}
+		</script>
+
+
+		<!-- /. END CONTAINER  -->
+	</div>
+
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+	<script>
+		(function(b, o, i, l, e, r) {
+			b.GoogleAnalyticsObject = l;
+			b[l] || (b[l] =
+				function() {
+					(b[l].q = b[l].q || []).push(arguments)
+				});
+			b[l].l = +new Date;
+			e = o.createElement(i);
+			r = o.getElementsByTagName(i)[0];
+			e.src = 'https://www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e, r)
+		}(window, document, 'script', 'ga'));
+		ga('create', 'UA-XXXXX-X');
+		ga('send', 'pageview');
+	</script>
+
+	<!-- build:js scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:js scripts/plugins.js -->
+	<script src="/bower_components/bootstrap/js/affix.js"></script>
+	<script src="/bower_components/bootstrap/js/alert.js"></script>
+	<script src="/bower_components/bootstrap/js/dropdown.js"></script>
+	<script src="/bower_components/bootstrap/js/tooltip.js"></script>
+	<script src="/bower_components/bootstrap/js/modal.js"></script>
+	<script src="/bower_components/bootstrap/js/transition.js"></script>
+	<script src="/bower_components/bootstrap/js/button.js"></script>
+	<script src="/bower_components/bootstrap/js/popover.js"></script>
+	<script src="/bower_components/bootstrap/js/carousel.js"></script>
+	<script src="/bower_components/bootstrap/js/scrollspy.js"></script>
+	<script src="/bower_components/bootstrap/js/collapse.js"></script>
+	<script src="/bower_components/bootstrap/js/tab.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js scripts/main.js -->
+	<script src="scripts/main.js"></script>
+	<!-- endbuild -->
+
+</body>
+
 </html>

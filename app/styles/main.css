@@ -128,8 +128,8 @@ strong {
 .navbar-inverse.navbar .container .navbar-brand {
 	text-indent: -999px;
 	width: 150px;
-	background: transparent url('https://www.bestgiftcards.com.au/Content/image/best-gift-cards-logo-header.png') no-repeat center center;
-	background-size: 50%;
+	background: transparent url('../img/client-logo.png') no-repeat center center;
+	background-size: 100%;
 	margin-left: 0px;
 }
 .navbar-inverse .navbar-nav>li>a {
@@ -509,15 +509,32 @@ form .panel {
     *zoom: 1;
 }
 
+@media (min-width: 768px){
 .fileUpload input.upload {
     position: absolute;
     top: 0;
-    right: 0;
+    right:;
     margin: 0;
     padding: 0;
-    font-size: 20px;
-    font-weight: 300;
+    width: 80px;
+    font-size: 40px;
     cursor: pointer;
-    opacity: 0;
+    opacity:  ;
     filter: alpha(opacity=0);
+}
+}
+
+@media (min-width: 300px){
+.fileUpload input.upload {
+    position: absolute;
+    top: 10px;
+    right: -20;
+    margin: 0;
+    padding: 0;
+    width: 280px;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0 ;
+    filter: alpha(opacity=0);
+}
 }
