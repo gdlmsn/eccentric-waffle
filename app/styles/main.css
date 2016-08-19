@@ -128,7 +128,7 @@ strong {
 .navbar-inverse.navbar .container .navbar-brand {
 	text-indent: -999px;
 	width: 150px;
-	background: transparent url('../img/client-logo.png') no-repeat center center;
+	background: transparent url('../images/client-logo.png') no-repeat center center;
 	background-size: 100%;
 	margin-left: 0px;
 }
@@ -509,32 +509,101 @@ form .panel {
     *zoom: 1;
 }
 
+
+
 @media (min-width: 768px){
 .fileUpload input.upload {
     position: absolute;
-    top: 0;
-    right:;
+    top: 0px;
+    left: 15px;
     margin: 0;
     padding: 0;
-    width: 80px;
+    max-width: 90px;
     font-size: 40px;
-    cursor: pointer;
-    opacity:  ;
-    filter: alpha(opacity=0);
-}
-}
-
-@media (min-width: 300px){
-.fileUpload input.upload {
-    position: absolute;
-    top: 10px;
-    right: -20;
-    margin: 0;
-    padding: 0;
-    width: 280px;
-    font-size: 30px;
     cursor: pointer;
     opacity: 0 ;
     filter: alpha(opacity=0);
 }
 }
+@media (width: 767px){
+.fileUpload input.upload {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    margin: 0;
+    padding: 0;
+    max-width: 675px;
+    font-size: 40px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+}
+@media only screen and (width:414px){
+      /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+      .fileUpload input.upload {
+          position: absolute;
+          top: 0px;
+          left: 15px;
+          margin: 0;
+          padding: 0;
+          max-width: 320px;
+          font-size: 40px;
+          cursor: pointer;
+          opacity: 0;
+          filter: alpha(opacity=0);
+      }
+   }
+
+   @media only screen and (width:412px){
+         /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+         .fileUpload input.upload {
+             position: absolute;
+             top: 0px;
+             left: 15px;
+             margin: 0;
+             padding: 0;
+             max-width: 30px;
+             font-size: 40px;
+             cursor: pointer;
+             opacity: 0;
+             filter: alpha(opacity=0);
+         }
+      }
+
+
+   @media only screen and (width:375px){
+         /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+         .fileUpload input.upload {
+             position: absolute;
+             top: 0px;
+             left: 20px;
+             margin: 0;
+             padding: 0;
+             max-width: 275px;
+             font-size: 40px;
+             cursor: pointer;
+             opacity:0 ;
+             filter: alpha(opacity=0);
+         }
+      }
+
+      @media only screen and (width:360px){
+            /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+            .fileUpload input.upload {
+                position: absolute;
+                top: 0px;
+                left: 15px;
+                margin: 0;
+                padding: 0;
+                max-width: 265px;
+                font-size: 40px;
+                cursor: pointer;
+                opacity:0 ;
+                filter: alpha(opacity=0);
+            }
+         }
